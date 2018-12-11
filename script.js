@@ -3,6 +3,7 @@
 let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "z"];
 let newWord = [];
 
+
 function getWord() {
 	let word = document.getElementById("name").value;
 
@@ -48,10 +49,18 @@ function capitalise(str) {
 }
 
 
-function go() {
+function go() {	
+	document.getElementById("result").innerHTML = "";
 	getWord();
 	let result = capitalise(newWord.join(''));
 	document.getElementById("result").value = result;
 }
 
 document.getElementById("convert").addEventListener("click", go);
+document.addEventListener('keypress', function (e) {
+		let key = e.which || e.keyCode;
+
+		if (key === 13) {
+			go();
+		}
+	});
