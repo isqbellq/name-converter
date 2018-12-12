@@ -5,7 +5,7 @@ let newWord = [];
 
 
 function getWord() {
-	let word = document.getElementById("name").value;
+	let word = document.getElementById("name").value.toLowerCase();
 
 	for (let i = 0; i < word.length; i++) {
 		for (var j = 0; j < alphabet.length; j++) {
@@ -50,7 +50,6 @@ function capitalise(str) {
 
 
 function go() {	
-	document.getElementById("result").innerHTML = "";
 	getWord();
 	let result = capitalise(newWord.join(''));
 	document.getElementById("result").value = result;
