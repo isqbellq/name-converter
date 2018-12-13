@@ -24,7 +24,10 @@ function getWord() {
 		if (word[i] === " ") {
 			let newLetter = " ";
 			newWord.push(newLetter);
-		} 
+		} else if (word[i] === "j" || word[i] === "k" || word[i] === "w" || word[i] === "x" || word[i] === "y") {
+			let newLetter = word[i];
+			newWord.push(newLetter);
+		}
 	}
 }
 
@@ -54,6 +57,7 @@ function go() {
 }
 
 document.getElementById("convert").addEventListener("click", go);
+
 document.addEventListener('keypress', function (e) {
 	let key = e.which || e.keyCode;
 
