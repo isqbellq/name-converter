@@ -10,25 +10,22 @@ function getWord() {
 	for (let i = 0; i < word.length; i++) {
 		for (var j = 0; j < alphabet.length; j++) {
 
-			if (word[i] === " ") {
-				addSpace();
+			if (word[i] === alphabet[j] && alphabet[alphabet.indexOf(alphabet[j]) + 4] === undefined) {
+				let newLetter = alphabet[4 - (alphabet.length - alphabet.indexOf(alphabet[j]))];
+
+				newWord.push(newLetter);
 			} else if (word[i] === alphabet[j]) {
 				let newLetter = alphabet[alphabet.indexOf(alphabet[j]) + 4];
 
 				newWord.push(newLetter);
 			}
-
-			if (word[i] === alphabet[j] && alphabet[alphabet.indexOf(alphabet[j]) + 4] === undefined) {
-				let newLetter = alphabet[4 - (alphabet.length - alphabet.indexOf(alphabet[j]))];
-				newWord.push(newLetter);
-			}	
 		}
-	}
-}
 
-function addSpace() {
-	let newLetter = " ";
-	newWord.push(newLetter);
+		if (word[i] === " ") {
+			let newLetter = " ";
+			newWord.push(newLetter);
+		} 
+	}
 }
 
 function capitalise(str) {
@@ -57,9 +54,9 @@ function go() {
 
 document.getElementById("convert").addEventListener("click", go);
 document.addEventListener('keypress', function (e) {
-		let key = e.which || e.keyCode;
+	let key = e.which || e.keyCode;
 
-		if (key === 13) {
-			go();
-		}
-	});
+	if (key === 13) {
+		go();
+	}
+});
