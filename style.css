@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 
  *:focus { 
 	outline: transparent !important; 
@@ -9,17 +9,17 @@ html, body {
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Dosis', sans-serif;
 	background-color: #f6f6f6;
 	font-size: 20px;
 }
 header {
-	background-color: #888;
+	background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
 	color: #f3f3f3;
 	border-radius: 0;
-	-webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 1);
-	-moz-box-shadow:    0px 3px 5px rgba(100, 100, 100, 1);
-	box-shadow:         0px 3px 5px rgba(100, 100, 100, 1);
+	-webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.3);
+	-moz-box-shadow:    0px 3px 5px rgba(100, 100, 100, 0.3);
+	box-shadow:         0px 3px 5px rgba(100, 100, 100, 0.3);
 }
 h1 {
 	margin-top: 0;
@@ -33,26 +33,26 @@ input {
 	border: 1px solid #999;
 	text-align: center;
 	font-size: 15px;
-	font-family: 'Source Code Pro', monospace;
 }
 button {
-	background-color: #4a4a4a;
+	background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
 	border: none;
-	border-radius: 5px;
+	border-radius: 10px;
 	color: #eee;
 	text-shadow:  1px 1px 4px #000;
 	text-transform: uppercase;
 	padding: 13px 30px;
 	margin: 30px 5px;
 	text-align: center;
-	font-size: 15px;
+	font-size: 22px;
 	box-shadow: 0px 0px 5px #222;
 	-webkit-box-shadow: 0px 0px 5px #222;
 	-moz-box-shadow: 0px 0px 5px #222;
 	-o-box-shadow: 0px 2px 5px #222;
+	font-family: 'Dosis', sans-serif;
 }
 button:hover {
-	text-shadow:  1px 1px 4px #ccc;
+	text-shadow:  1px 1px 4px #aaa;
 	cursor: pointer;
 	background-color: #3b3b3b;
 }
@@ -64,7 +64,6 @@ textarea {
     border-radius: 10px;
     text-align: center;
     font-size: 15px;
-    font-family: 'Source Code Pro', monospace;
 }
 ::-webkit-input-placeholder {
    text-align: center;
