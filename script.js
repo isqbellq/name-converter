@@ -53,7 +53,7 @@ function go() {
 	getWord();
 	let result = capitalise(newWord.join(''));
 	document.getElementById("result").value = result;
-	window.scrollTo(0,document.body.scrollHeight);
+	window.scrollTo(0, document.body.scrollHeight);
 }
 
 document.getElementById("convert").addEventListener("click", go);
