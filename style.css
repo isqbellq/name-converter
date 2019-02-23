@@ -40,16 +40,16 @@ button {
 	border: none;
 	border-radius: 10px;
 	color: #555;
-	text-shadow:  1px 1px 4px #ccc;
+	text-shadow:  1px 1px 4px #eee;
 	text-transform: uppercase;
 	padding: 13px 30px;
 	margin: 30px 5px;
 	text-align: center;
 	font-size: 22px;
-	box-shadow: 0px 0px 5px #222;
-	-webkit-box-shadow: 0px 0px 5px #222;
-	-moz-box-shadow: 0px 0px 5px #222;
-	-o-box-shadow: 0px 2px 5px #222;
+	box-shadow: 0px 0px 5px #666;
+	-webkit-box-shadow: 0px 0px 5px #666;
+	-moz-box-shadow: 0px 0px 5px #666;
+	-o-box-shadow: 0px 2px 5px #666;
     font-family: 'Dosis', sans-serif;
 }
 button:hover {
